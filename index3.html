@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Поиск</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <h1>Добро пожаловать в поисковик!<br>
+    Введите данные для поиска:</h1>
+    <form>
+        <fieldset>
+            <legend>Поисковик</legend>
+            <p>Введите запрос:</p>
+            <input id="a" type="search" placeholder="Введите ваш запрос сюда...">
+            <p>Сортировать результаты по:</p>
+            <select id="b">
+                <option value="1">По релевантности</option>
+                <option value="1">По популярности</option>
+                <option value="1">По новизне</option>
+            </select>
+            <p>Количество результатов:</p>
+            1<input type="range" min="1" max="100" step="1" value="1">100<br>
+            <button class="c" type="submit" formaction="index1.html">Найти</button>
+            <button class="c" type="reset" formmethod="get">Сбросить</button>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1>Добро пожаловать в форму регистрации! <br>
+    Введите следующие данные:</h1>
+    <form>
+        <fieldset>
+            <legend>Форма регистрации</legend>
+            <p>Логин:</p>
+            <input class="a" name="login" type="text" placeholder="Введите логин сюда..." required><br>
+            <p>Ваш основной стек технологий (необязательно):</p>
+            <input name="checkbox" type="checkbox">Python<br>
+            <input name="checkbox" type="checkbox">PHP<br>
+            <input name="checkbox" type="checkbox">HTML<br>
+            <input name="checkbox" type="checkbox">CSS<br>
+            <input name="checkbox" type="checkbox">JavaScript<br>
+            <input name="checkbox" type="checkbox">PostgreSQL<br>
+            <input name="checkbox" type="checkbox">Yii2 PHP Framework<br>
+            <p>Пол:</p>
+            <input name="radio" type="radio">Мужской<br>
+            <input name="radio" type="radio">Женский<br>
+            <p>Номер телефона:</p>
+            <input class="a" name="tel" type="tel" pattern="^\+7\(\d{3}\)\d{3}-\d{2}-\d{2}$" placeholder="+7(xxx)xxx-xx-xx" required>
+            <p>Email:</p>
+            <input class="a" name="email" type="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            placeholder="test@example.com">
+            <p>Дата рождения:</p>
+            <input type="date" name="date">
+            <p>Немного о себе (необязательно):</p>
+            <textarea id="id_area" placeholder="О себе вот тут:" cols="40" rows="10"></textarea>
+            <p>Аватарка (.png, необязательно):</p>
+            <input type="file" name="file" accept="image/png">
+            <p>Пароль:</p>
+            <input class="a" type="password" required placeholder="Введите пароль сюда...">
+            <p>Повторите пароль:</p>
+            <input class="a" type="password" required placeholder="Повторите пароль здесь...">
+            <br><br>
+            <button class="c" type="reset">Сбросить</button>
+            <button class="c" type="submit" formaction="index3.html" formmethod="post">Войти</button>
+        </fieldset>
+    </form>
+</body>
+</html>
